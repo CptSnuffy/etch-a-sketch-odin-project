@@ -1,0 +1,31 @@
+body
+{
+    font-family: 'Mochiy Pop P One', sans-serif;
+    font-size: 35px;
+    margin: 0px;
+}
+
+header
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #212121;
+    color: #bababa;
+    height: 50px;
+    
+}
+
+#gridparent
+{
+    display: grid;
+    grid-template-rows: repeat(var(--grid-rows), 1fr);
+    grid-template-columns: repeat(var(--grid-cols), 1fr);
+
+}
+
+.sketchdiv
+{
+    background-color: black;
+    text-align: center;
+}
