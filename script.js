@@ -1,7 +1,7 @@
 
 function paintCell()
 {
-    EventTarget.style.backgroundColor = 'white';
+    this.style.backgroundColor = 'white';
 }
 
 function setupGame(gridSize = 16)
