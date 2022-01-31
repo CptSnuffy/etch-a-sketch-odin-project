@@ -42,6 +42,7 @@ header
 
 .sketchdiv
 {
+    aspect-ratio: 1/1;
     position: relative;
     background-color: black;
     min-height: 32px;
