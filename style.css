@@ -17,8 +17,41 @@ header
     
 }
 
+.hamburgermenu
+{
+    display: inline-block;
+    cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 
+{
+    width: 35px;
+    height: 5px;
+    background-color: #bababa;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.change .bar1
+{
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2
+{
+    opacity: 0;
+}
+
+.change .bar3 
+{
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
 #resetbutton
 {
+    position: absolute;
     justify-content: center;
     text-align: center;
     color: #bababa;
@@ -31,21 +64,26 @@ header
 #gridparent
 {
     display: grid;
+    position: relative;
+    grid-auto-flow: dense;
+    aspect-ratio: 16/9;
     grid-template-rows: repeat(var(--grid-rows), 1fr);
     grid-template-columns: repeat(var(--grid-cols), 1fr);
-    max-width: 512px;
-    max-height: 256px;
-    margin: auto;
+    width: 500px;
+    height: 500px;
+    margin: 0 700px 0 700px;
     margin-bottom: 10px;
     margin-top: 10px;
 }
 
 .sketchdiv
 {
+    display: flex;
+    object-fit: contain;
+    flex-grow: 0;
+    flex-shrink: 1;
     aspect-ratio: 1/1;
     position: relative;
     background-color: black;
-    min-height: 32px;
-    max-height: 32px;
     text-align: center;
 }

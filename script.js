@@ -1,4 +1,10 @@
 
+
+function animateMenu(menu)
+{
+    menu.classList.toggle("change");
+}
+
 function reset()
 {
     let userGridSize = window.prompt("Please enter a grid size up to a maximum of 100");
@@ -44,4 +50,6 @@ function setupGame(gridSize = 16)
 let resetButton = document.getElementById('resetbutton');
 
 resetButton.onclick = () => {reset();};
+
+
 setupGame();
