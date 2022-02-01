@@ -47,9 +47,9 @@ function setupGame(gridSize = 16)
     }
 }
 
-let resetButton = document.getElementById('resetbutton');
+// let resetButton = document.getElementById('resetbutton');
 
-resetButton.onclick = () => {reset();};
+// resetButton.onclick = () => {reset();};
 
 
 setupGame();
