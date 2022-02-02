@@ -23,8 +23,12 @@ footer
     display: flex;
     justify-content: center;
     background-color: #181818;
-    padding: 30px;
-    margin-top: 64px;
+    position: fixed;
+    padding: 10px 10px 0px 10px;
+    bottom: 0;
+    width: 100%;
+    /* Height of the footer*/ 
+    height: 40px;
 }
 
 footer > a
